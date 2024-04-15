@@ -18,7 +18,7 @@
 
 Notes:
 1. **Stop** your server: Open your project folder in VSCode, then in the terminal type: `docker compose down`.
-2. **Start** your server: Open your project folder in VSCode, then in the terminal type: `docker compose up`.
+2. **Start** your server: Open your project folder in VSCode, then in the terminal type: `docker compose up -d`. (Omit -d to see all logs in terminal, ctrl-c stops)
 3. **Run queries directly** from your server. Open your project folder in VSCode, then in the terminal type:
 ```
 docker exec -it mongodb bash
