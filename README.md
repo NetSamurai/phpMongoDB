@@ -37,4 +37,4 @@ mongosh mongodb://admin:password@mongodb:27017
 First command goes inside your docker container of `MongoDB`, the second one, from within that container, goes inside mongo itself.
 
 #### Disclaimer:
-This is not a production ready docker build for this stack, it's merely a scaffolding.
+This is not a production ready docker build for this stack, it's merely a scaffolding for development and testing.
