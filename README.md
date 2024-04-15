@@ -36,7 +36,7 @@ Open your project folder in VSCode, then in the terminal type:
 docker exec -it mongodb bash
 mongosh mongodb://admin:password@mongodb:27017
 ``` 
-First command goes inside your docker container of `MongoDB`, the second one, from within that container, goes inside mongo itself.
+First command goes inside your docker container of `MongoDB`, the second one, from within that container, goes inside mongo itself. Once in a container `exit` will bring you back to the previous scope.
 
 #### Disclaimer:
 This is not a production ready docker build for this stack, it's merely a scaffolding for development and testing.
