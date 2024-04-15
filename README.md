@@ -26,7 +26,9 @@ Notes:
 | function | how-to |
 | --- | --- |
 | **Stop** your server | Open your project folder in VSCode, then in the terminal type: `docker compose down`. |
-| **Start** your server | Open your project folder in VSCode, then in the terminal type: `docker compose up -d`. (Omit -d to see all logs in terminal, ctrl-c stops) | 
+| **Start** your server | Open your project folder in VSCode, then in the terminal type: `docker compose up -d`. (Omit -d to see all logs in terminal, ctrl-c stops) |
+| What containers are we running here? | See all `services` defined in <a href="docker-compose.yaml">docker-compose.yaml</a> |
+| How is the PHP image built? | See <a href="Dockerfile">Dockerfile</a> |
 
 #### **Run queries directly** from your server
 Open your project folder in VSCode, then in the terminal type: 
