@@ -7,15 +7,22 @@
 6. Open the extracted folder, and right click `phpWithMongoDB` folder and select run with (VS) Code.
 7. On left pane, click `docker-compose.yaml`. 
 8. **For first time installs of Visual Studio Code Only**, it may ask you in the bottom right corner of Visual Studio code to get `Docker` and `WSL` extension for VS Code- click yes.
-9. In VS Code, again open folder like in step 5 if not already open.
-10. In VS Code, again open `docker-compose.yaml`.
-11. In VS Code, on the top menu bar, open a `Terminal > New Terminal`
-12. Inside the terminal, issue the start command `docker compose up -d`.
-13. Click yes to firewall stuff, you have a server now.
-14. http://localhost:8000/ is your website.
-15. http://localhost:8081/ is your database - admin/pass  is the HTTP basic auth. admin/password is the `MongoDB` password.
-16. In the extracted folder you'll see it added files to the workspace, dont delete those, its the database. 
-17. Change desired PHP in the `/app` folder.
+10. In VS Code, again open folder like in step 5 if not already open.
+11. In VS Code, again open `docker-compose.yaml`.
+12. In VS Code, on the top menu bar, open a `Terminal > New Terminal`
+13. In VS Code terminal, Clear docker cache by running:
+```
+docker system prune -f
+docker image prune -a -f
+docker volume prune -f
+```
+- Note: This step is only neccessary because this example I built is of an interactive docker build and not a stored image.
+15. Inside the terminal, issue the start command `docker compose up -d`.
+16. Click yes to firewall stuff, you have a server now.
+17. http://localhost:8000/ is your website.
+18. http://localhost:8081/ is your database - admin/pass  is the HTTP basic auth. admin/password is the `MongoDB` password.
+19. In the extracted folder you'll see it added files to the workspace, dont delete those, its the database. 
+20. Change desired PHP in the `/app` folder.
 
 Notes:
 1. **Stop** your server: Open your project folder in VSCode, then in the terminal type: `docker compose down`.
