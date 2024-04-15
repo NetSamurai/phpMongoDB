@@ -12,10 +12,16 @@
 12. Inside the terminal, issue the start command `docker compose up -d`.
 13. Click yes to firewall stuff, you have a server now.
 14. http://localhost:8000/ is your website.
-15. http://localhost:8081/ is your database - admin/pass  is the HTTP basic auth. admin/t3$5pass! is the mongo pass.
+15. http://localhost:8081/ is your database - admin/pass  is the HTTP basic auth. admin/password is the `MongoDB` password.
 16. In the extracted folder you'll see it added files to the workspace, dont delete those, its the database. 
 17. Change desired PHP in the `/app` folder.
 
 Notes:
 1. **Stop** your server: Open your project folder in VSCode, then in the terminal type: `docker compose down`.
 2. **Start** your server: Open your project folder in VSCode, then in the terminal type: `docker compose up`.
+3. **Run queries directly** from your server. Open your project folder in VSCode, then in the terminal type:
+```
+docker exec -it mongodb bash
+mongosh mongodb://admin:password@mongodb:27017
+```
+First command goes inside your docker container of `MongoDB`, the second one, from within that container, goes inside mongo itself.
