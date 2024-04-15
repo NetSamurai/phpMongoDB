@@ -7,29 +7,33 @@
 6. Open the extracted folder, and right click `phpWithMongoDB` folder and select run with (VS) Code.
 7. On left pane, click `docker-compose.yaml`. 
 8. **For first time installs of Visual Studio Code Only**, it may ask you in the bottom right corner of Visual Studio code to get `Docker` and `WSL` extension for VS Code- click yes.
-10. In VS Code, again open folder like in step 5 if not already open.
-11. In VS Code, again open `docker-compose.yaml`.
-12. In VS Code, on the top menu bar, open a `Terminal > New Terminal`
-13. In VS Code terminal, Clear docker cache by running:
+9. In VS Code, again open folder like in step 5 if not already open.
+10. In VS Code, again open `docker-compose.yaml`.
+11. In VS Code, on the top menu bar, open a `Terminal > New Terminal`
+12. In VS Code terminal, Clear docker cache by running:
 ```
 docker system prune -f
 docker image prune -a -f
 docker volume prune -f
 ```
 - Note: This step is only neccessary because this example I built is of an interactive docker build and not a stored image.
-15. Inside the terminal, issue the start command `docker compose up -d`.
-16. Click yes to firewall stuff, you have a server now.
-17. http://localhost:8000/ is your website.
-18. http://localhost:8081/ is your database - admin/pass  is the HTTP basic auth. admin/password is the `MongoDB` password.
-19. In the extracted folder you'll see it added files to the workspace, dont delete those, its the database. 
-20. Change desired PHP in the `/app` folder.
+13. Inside the terminal, issue the start command `docker compose up -d`.
+14. Click yes to firewall stuff, you have a server now.
+15. http://localhost:8000/ is your website.
+16. http://localhost:8081/ is your database - admin/pass  is the HTTP basic auth. admin/password is the `MongoDB` password.
+17. In the extracted folder you'll see it added files to the workspace, dont delete those, its the database. 
+18. Change desired PHP in the `/app` folder.
 
 Notes:
-1. **Stop** your server: Open your project folder in VSCode, then in the terminal type: `docker compose down`.
-2. **Start** your server: Open your project folder in VSCode, then in the terminal type: `docker compose up -d`. (Omit -d to see all logs in terminal, ctrl-c stops)
-3. **Run queries directly** from your server. Open your project folder in VSCode, then in the terminal type:
+| function | how-to |
+| --- | --- |
+| **Stop** your server | Open your project folder in VSCode, then in the terminal type: `docker compose down`. |
+| **Start** your server | Open your project folder in VSCode, then in the terminal type: `docker compose up -d`. (Omit -d to see all logs in terminal, ctrl-c stops) | 
+
+#### **Run queries directly** from your server
+Open your project folder in VSCode, then in the terminal type: 
 ```
 docker exec -it mongodb bash
 mongosh mongodb://admin:password@mongodb:27017
-```
+``` 
 First command goes inside your docker container of `MongoDB`, the second one, from within that container, goes inside mongo itself.
