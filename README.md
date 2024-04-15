@@ -3,7 +3,7 @@
 2. Open `Command Prompt` as `Administrator` and type `wsl --update`.
 3. Install VS Code, use default options, add context to path. https://code.visualstudio.com/
 4. Open VS code & update as needed.
-5. Unzip https://netspace.in/netspace.in/assets/phpWithMongoDB.zip to a a folder you want to be the workspace.
+5. Unzip https://netspace.in/netspace.in/assets/phpWithMongoDB.zip to a a folder you want to be the workspace. (or clone this repo)
 6. Open the extracted folder, and right click `phpWithMongoDB` folder and select `Run with (VS) Code`.
 7. On left pane, click `docker-compose.yaml`. 
 8. **For first time installs of Visual Studio Code Only**, it may ask you in the bottom right corner of Visual Studio code to get `Docker` and `WSL` extension for VS Code- click yes. If this is needed, close VS Code after it's done installing, and repeat Step 6 and 7 after.
