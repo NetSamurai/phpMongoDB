@@ -16,9 +16,9 @@ docker volume prune -f
 ```
 - Note: This step is only neccessary because this example I built is of an interactive docker build and not a stored image.
 11. Inside the VS Code Terminal, issue the start command `docker compose up -d`.
-12. Click yes to firewall stuff as any pops up, you have a server now.
+12. If any firewall stuff pops up right now click Allow / Yes. You now have a server.
 13. http://localhost:8000/ is your website.
-14. http://localhost:8081/ is your database - admin/pass  is the HTTP basic auth. admin/password is the `MongoDB` login.
+14. http://localhost:8081/ is your database frontend - admin/pass  is the `HTTP basic auth`. admin/password is the `MongoDB` login.
 15. In the extracted folder you'll see it added files to the workspace, dont delete those, its the database. 
 16. Change all desired PHP code in the `/app` folder.
 
