@@ -5,7 +5,7 @@
 5. Unzip https://netspace.in/netspace.in/assets/phpWithMongoDB.zip to a a folder you want to be the workspace.
 6. Open the extracted folder, and right click `phpWithMongoDB` folder and select run with (VS) Code.
 7. On left pane, click `docker-compose.yaml`. 
-8. For first time installs, it may ask you in the bottom right corner of Visual Studio code to get `Docker` and `WSL` extension for VS Code- click yes.
+8. **For first time installs of Visual Studio Code Only**, it may ask you in the bottom right corner of Visual Studio code to get `Docker` and `WSL` extension for VS Code- click yes.
 9. In VS Code, again open folder like in step 5 if not already open.
 10. In VS Code, again open `docker-compose.yaml`.
 11. In VS Code, on the top menu bar, open a `Terminal > New Terminal`
