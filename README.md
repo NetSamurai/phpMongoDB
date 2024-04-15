@@ -3,7 +3,7 @@
 2. Open `Command Prompt` as `Administrator` and type `wsl --update`.
 3. Install VS Code, use default options, add context to path. https://code.visualstudio.com/
 4. Open VS code & update as needed.
-5. Unzip https://github.com/NetSamurai/phpMongoDB/archive/refs/heads/main.zip to a a folder you want to be the workspace, go inside the `phpMongoDB-main` folder and rename the folder within to phpMongoDB.
+5. Unzip https://github.com/NetSamurai/phpMongoDB/archive/refs/heads/main.zip to a folder you want to be the workspace and rename the folder within to phpMongoDB.
 6. Open the extracted folder, and right click `phpWithMongoDB` folder and select `Run with (VS) Code`.
 7. On left pane, click `docker-compose.yaml`. 
 8. **For first time installs of Visual Studio Code Only**, it may ask you in the bottom right corner of Visual Studio code to get `Docker` and `WSL` extension for VS Code- click yes. If this is needed, close VS Code after it's done installing, and repeat Step 6 and 7 after.
